@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piu-Su Shop</title>
+        <link rel="icon" href="./assets/img/icon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="header">
+                <div class="grid">
+                    <nav class="h-navbar">
+                        <ul class="h-navbar__list">
+                            <li class="h-navbar__item h-navbar__item--has-qr h-navbar__item--separate">
+                                Vào cửa hàng trên ứng dụng Piu-Su Shop
+
+                                <!-- QR Code -->
+                                <div class="qr">
+                                    <img src="./assets/img/qr_code.png" alt="QR Code" class="qr__img">
+                                    <div class="qr__apps">
+                                        <img src="./assets/img/google_play.png" alt="Google Play" class="qr__download-img">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="qr__download-img">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="h-navbar__item">
+                                <span class="h-navbar__title--no-pointer">Kết nối</span>
+                                <a href="" class="h-navbar__icon-link">
+                                    <i class="h-navbar__icon fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="h-navbar__icon-link">
+                                    <i class="h-navbar__icon fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <ul class="h-navbar__list">
+                            <li class="h-navbar__item h-notify__item--has-notify">
+                                <a href="" class="h-navbar__item-link">
+                                    <i class="h-navbar__icon fas fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="h-notify">
+                                    <header class="h-notify__header">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="h-notify__list">
+                                        <li class="h-notify__item">
+                                            <a href="" class="h-notify__link">
+                                                <img src="./assets/img/thongbao/royal_canin_kitten.jpg" alt="Thức ăn cho mèo con ROYAL CANIN Kitten" class="h-notify__img">
+                                                <div class="h-notify__info">
+                                                    <span class="h-notify__name">Thức ăn cho mèo con ROYAL CANIN Kitten</span>
+                                                    <span class="h-notify__descriotion">Bạn cần thức ăn cho mèo con?</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="h-notify__item">
+                                            <a href="" class="h-notify__link">
+                                                <img src="./assets/img/thongbao/nha_ve_sinh_cho-meo_makar_luxury_cat_litter_box.jpg" alt="Nhà vệ sinh cho mèo MAKAR Luxury Cat Litter Box" class="h-notify__img">
+                                                <div class="h-notify__info">
+                                                    <span class="h-notify__name">Nhà vệ sinh cho mèo MAKAR Luxury Cat Litter Box</span>
+                                                    <span class="h-notify__descriotion">Tạo không gian riêng tư cho lũ mồn lèo</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="h-notify__item">
+                                            <a href="" class="h-notify__link">
+                                                <img src="./assets/img/thongbao/luoc_chai_long_cho_meo_dele_co_nut_bam.jpg" alt="Lược chải lông chó mèo DELE có nút bấm" class="h-notify__img">
+                                                <div class="h-notify__info">
+                                                    <span class="h-notify__name">Lược chải lông cho mèo DELE có nút bấm</span>
+                                                    <span class="h-notify__descriotion">Đau đầu vì thú cưng của bạn rụng lông?</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <footer class="h-notify__footer">
+                                        <a href="" class="h-notify__footer-btn">Xem tất cả</a>
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="h-navbar__item">
+                                <a href="" class="h-navbar__item-link">
+                                    <i class="h-navbar__icon fas fa-question-circle"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <!-- <li class="h-navbar__item h-navbar__item--strong h-navbar__item--separate">Đăng nhập</li>
+                            <li class="h-navbar__item h-navbar__item--strong">Đăng kí</li> -->
+
+                            <li class="h-navbar__item h-navbar__user">
+                                <img src="./assets/img/user.jpg" alt="" class="h-navbar__user-avatar">
+                                <span class="h-navbar__user-name">Nguyễn Hoàng Huệ</span>
+
+                                <ul class="h-navbar__user-menu">
+                                    <li class="h-navbar__user-item">
+                                        <a href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="h-navbar__user-item">
+                                        <a href="">Địa chỉ của tôi</a>
+                                    </li>
+                                    <li class="h-navbar__user-item">
+                                        <a href="">Đơn hàng đã mua</a>
+                                    </li>
+                                    <li class="h-navbar__user-item h-navbar__user-item--separate">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header with search -->
+                    <div class="h-with-search">
+                        <div class="logo">
+                            <a href="/" class="logo__link">
+                                <img src="./assets/img/logo.png" alt="Piu-Su Shop" class="logo__img">
+                            </a>
+                        </div>
+
+                        <div class="search">
+                            <div class="search__input-wrap">
+                                <input type="text" class="search__input" placeholder="Bạn đang cần gì?">
+
+                                <!-- Search history -->
+                                <div class="search__history">
+                                    <h3 class="search__history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="search__history-list">
+                                        <li class="search__history-item">
+                                            <a href="">cat tree</a>
+                                        </li>
+
+                                        <li class="search__history-item">
+                                            <a href="">bàn cào móng</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search__select">
+                                <button class="search__btn">
+                                    <i class="search__btn-icon fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cart layout -->
+                        <div class="cart">
+                            <div class="cart__wrap">
+                                <i class="cart__icon fas fa-shopping-cart"></i>
+                                <span class="cart__notice">3</span>
+
+                                <!-- No cart: cart__list--no-cart -->
+                                <div class="cart__list">
+                                    <img src="./assets/img/no_cart.png" alt="" class="cart__no-cart-img">
+                                    <span class="cart__list--no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+
+                                    <h4 class="cart__heading">Sản phẩm đã thêm</h4>
+                                    <ul class="cart__list-item">
+                                        <!-- Cart item -->
+                                        <li class="cart__item">
+                                            <img src="./assets/img/cart/pate_cho_meo_ciao_tuna_whitebait_ca_ngu_va_ca_chach_trang.jpg" alt="" class="cart__img">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-head">
+                                                    <h5 class="cart__item-name">Pate cho mèo CIAO</h5>
+                                                    <div class="cart__item-price-wrap">
+                                                        <span class="cart__item-price">20.000đ</span>
+                                                        <span class="cart__item-multiply">x</span>
+                                                        <span class="cart__item-quantity">3</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart__item-body">
+                                                    <span class="cart__item-descriotion">
+                                                        Phân loại: Vị cá ngừ và cá trạch trắng
+                                                    </span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="cart__item">
+                                            <img src="./assets/img/cart/bat_an_cho_cho_meo_nhua_mem_sawyer_pet.jpg" alt="" class="cart__img">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-head">
+                                                    <h5 class="cart__item-name">Bát ăn cho mèo nhựa mềm SAWYER PET</h5>
+                                                    <div class="cart__item-price-wrap">
+                                                        <span class="cart__item-price">40.000đ</span>
+                                                        <span class="cart__item-multiply">x</span>
+                                                        <span class="cart__item-quantity">2</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart__item-body">
+                                                    <span class="cart__item-descriotion">
+                                                        Phân loại: Size S
+                                                    </span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="cart__item">
+                                            <img src="./assets/img/cart/nha_ve_sinh_cho_meo_iris_wnt510.jpg" alt="" class="cart__img">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-head">
+                                                    <h5 class="cart__item-name">Nhà vệ sinh cho mèo IRIS WNT510</h5>
+                                                    <div class="cart__item-price-wrap">
+                                                        <span class="cart__item-price">480.000đ</span>
+                                                        <span class="cart__item-multiply">x</span>
+                                                        <span class="cart__item-quantity">1</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart__item-body">
+                                                    <span class="cart__item-descriotion">
+                                                        Phân loại: Màu xanh
+                                                    </span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="cart__view-cart btn btn--primary">Xem giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__row content">
+                        <div class="grid__column-2">
+                            <nav class="c-category">
+                                <h3 class="c-category__heading">
+                                    <i class="c-category__heading-icon fas fa-list-ul"></i>
+                                    Danh mục
+                                </h3>
+            
+                                <ul class="c-category__list">
+                                    <li class="c-category__item">
+                                        <i class="c-category__item-icon fas fa-caret-right"></i>
+                                        <span class="c-category__item-parent">Hạt</span>
+                                        <li class="c-category__item-child">
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Hạt khô</a>
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Hạt ướt</a>
+                                        </li>
+                                    </li>
+                                    <li class="c-category__item">
+                                        <i class="c-category__item-icon fas fa-caret-right"></i>
+                                        <span class="c-category__item-parent">Ăn vặt</span>
+                                        <li class="c-category__item-child">
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Pate và súp thưởng</a>
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Cỏ mèo</a>
+                                        </li>
+                                    </li>
+                                    <li class="c-category__item">
+                                        <i class="c-category__item-icon fas fa-caret-right"></i>
+                                        <span class="c-category__item-parent">Vệ sinh</span>
+                                        <li class="c-category__item-child">
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Cát vệ sinh</a>
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Khay và nhà vệ sinh</a>
+                                        </li>
+                                    </li>
+                                    <li class="c-category__item">
+                                        <i class="c-category__item-icon fas fa-caret-right"></i>
+                                        <span class="c-category__item-parent">Nhà và nệm</span>
+                                        <li class="c-category__item-child">
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Nhà</a>
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Nệm</a>
+                                        </li>
+                                    </li>
+                                    <li class="c-category__item">
+                                        <i class="c-category__item-icon fas fa-caret-right"></i>
+                                        <span class="c-category__item-parent">Vận chuyển</span>
+                                        <li class="c-category__item-child">
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Dây dắt</a>
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Balo và lồng vận chuyển</a>
+                                        </li>
+                                    </li>
+                                    <li class="c-category__item">
+                                        <i class="c-category__item-icon fas fa-caret-right"></i>
+                                        <span class="c-category__item-parent">Đồ dùng của mèo</span>
+                                        <li class="c-category__item-child">
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Sữa tắm, lược và kìm cắt móng</a>
+                                            <i class="c-category-item__child-icon fas fa-paw"></i>
+                                            <a href="" class="c-category-item__child-link">Đồ chơi của mèo</a>
+                                        </li>
+                                    </li>                                
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="grid__column-10">
+                            <div class="c-home-filter">                                
+                                <span class="c-home-filter__label">Sắp xếp theo</span>
+                                <button class="c-home-filter__btn btn">Phổ biến</button>
+                                <button class="c-home-filter__btn btn btn--primary">Mới nhất</button>
+                                <button class="c-home-filter__btn btn">Bán chạy</button>
+
+                                <div class="select-input">
+                                    <span class="select__input-label">Giá</span>
+                                    <i class="select__input-icon fas fa-sort-down"></i>
+
+                                    <!-- List options -->
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="c-home-filter__page">
+                                    <span class="c-home-filter__page-num">
+                                        <span class="c-home-filter__page-current">1</span>/20
+                                    </span>
+
+                                    <div class="c-home-filter__page-control">
+                                        <a href="" class="c-home-filter__page-btn c-home-filter__page-btn--disabled">
+                                            <i class="c-home-filter__page-icon fas fa-caret-left "></i>
+                                        </a>
+                                        <a href="" class="c-home-filter__page-btn">
+                                            <i class="c-home-filter__page-icon fas fa-caret-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-hone-product">
+                                <div class="grid__row">
+                                    <!-- Product item -->
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/catsrang_5kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo Catsrang 5kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">415.000đ</span>
+                                                <span class="c-home-product-item__price-current">353.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 865</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">15%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/royal_canin_indoor_27_400g.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo trưởng thành ROYAL CANIN Indoor 27 400g</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">115.000đ</span>
+                                                <span class="c-home-product-item__price-current">102.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 603</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">10%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/me_o_truong_thanh_vi_ca_ngu_1.2kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo trưởng thành Me-O vị cá ngừ 1.2kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">120.000đ</span>
+                                                <span class="c-home-product-item__price-current">108.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 1.1k</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">10%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/me-o_meo_me_va_meo_con_400g.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo mẹ và mèo con 400g</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">70.000đ</span>
+                                                <span class="c-home-product-item__price-current">60.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 518</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">15%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/cats_eye_1kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo Cat's eye 1kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">90.000đ</span>
+                                                <span class="c-home-product-item__price-current">80.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 1.6k</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">10%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/minino_jum_vi_hai_san_1.5kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo Minino Jum vị hải sản 1.5kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">117.000đ</span>
+                                                <span class="c-home-product-item__price-current">105.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 953</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">10%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/minino_vi_ca_ngu_1.3kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo Minino vị cá ngừ 1.3kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">100.000đ</span>
+                                                <span class="c-home-product-item__price-current">90.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 872</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">10%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/catsrang_kitten_1.5kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo con Catsrang Kitten 1.5kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">200.000đ</span>
+                                                <span class="c-home-product-item__price-current">170.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 741</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">15%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/catsrang_adult_1.5kg.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo trưởng thành Catsrang Adult 1.5kg</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">210.000đ</span>
+                                                <span class="c-home-product-item__price-current">190.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 956</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">10%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid__column-2-4">
+                                        <a class="c-home-product-item" href="">
+                                            <div class="c-home-product-item__img" style="background-image: url(./assets/img/products/royal_canin_kitten_400g.jpg)"></div>
+                                            <h4 class="c-home-product-item__name">Thức ăn hạt khô cho mèo con ROYAL CANIN Kitten 400g</h4>
+                                            <div class="c-home-product-item__price">
+                                                <span class="c-home-product-item__price-old">115.000đ</span>
+                                                <span class="c-home-product-item__price-current">110.000đ</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__action">
+                                                <div class="c-home-product-item__love c-home-product-item__love--loved">
+                                                    <i class="c-home-product-item__love-icon-empty far fa-heart"></i>
+                                                    <i class="c-home-product-item__love-icon-fill fas fa-heart"></i>
+                                                </div>
+                                                <div class="c-home-product-item__rating">
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="c-home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="c-home-product-item__sold">Đã bán 753</span>
+                                            </div>
+
+                                            <div class="c-home-product-item__favourite">
+                                                <span>Yêu thích</span>
+                                            </div>
+                                            <div class="c-home-product-item__sale-off">
+                                                <div class="c-home-product-item__sale-off-percent">5%</div>
+                                                <div class="c-home-product-item__sale-off-label">Giảm</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="c-pagination c-hone-product__pagination">
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">
+                                        <i class="c-pagination-item__icon fas fa-caret-left"></i>            
+                                    </a>
+                                </li>
+                                <li class="c-pagination-item c-pagination-item--active">
+                                    <a href="" class="c-pagination-item__link">1</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">2</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">3</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">4</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">5</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">...</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">20</a>
+                                </li>
+                                <li class="c-pagination-item">
+                                    <a href="" class="c-pagination-item__link">
+                                        <i class="c-pagination-item__icon fas fa-caret-right"></i>            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <h3 class="f-heading">Chăm sóc khách hàng</h3>
+                            <ul class="f-list">
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Trung tâm trợ giúp</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Piu-Su Blog</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Piu-Su Mall</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Thanh toán</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Trả hàng và hoàn tiền</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <h3 class="f-heading">Về Piu-Su Shop</h3>
+                            <ul class="f-list">
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Giới thiệu về Piu-Su Shop Việt Nam</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Điều khoản Piu-Su Shop</a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <h3 class="f-heading">Thanh toán</h3>
+                            <ul class="f__pay-list">
+                                <li class="f__pay-item">
+                                    <img src="./assets/img/hinh_thuc_thanh_toan/visa.png" alt="" class="f__pay-img">
+                                </li>
+                                <li class="f__pay-item">
+                                    <img src="./assets/img/hinh_thuc_thanh_toan/master_card.png" alt="" class="f__pay-img">
+                                </li>
+                                <li class="f__pay-item">
+                                    <img src="./assets/img/hinh_thuc_thanh_toan/jcb.png" alt="" class="f__pay-img">
+                                </li>
+                                <li class="f__pay-item">
+                                    <img src="./assets/img/hinh_thuc_thanh_toan/monney.png" alt="" class="f__pay-img">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <h3 class="f-heading">Theo dõi chúng tôi</h3>
+                            <ul class="f-list">
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">
+                                        <i class="f-item__icon fab fa-facebook"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="f-item">
+                                    <a href="" class="f-item__link">
+                                        <i class="f-item__icon fab fa-instagram"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <h3 class="f-heading">Tải ứng dụng Piu-Su Shop ngay thôi</h3>
+                            <div class="f-download">
+                                <img src="./assets/img/qr_code.png" alt="" class="f-download__qr">
+                                <div class="f-download__apps">
+                                    <a href="" class="f-download__app-link">
+                                        <img src="./assets/img/google_play.png" alt="Google Play" class="f-download__app-img">
+                                    </a>
+                                    <a href="" class="f-download__app-link">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="f-download__app-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-bottom">
+                    <div class="grid">
+                        <p>© 2021 Piu-Su Shop. Tất cả các quyền được bảo lưu.</p>
+                        <a href="" class="f-policy">Chính sách bảo mật</a>
+                        <a href="" class="f-policy">Quy chế hoạt động</a>
+                        <a href="" class="f-policy">Chính sách vận chuyển</a>
+                        <a href="" class="f-policy">Chính sách trả hàng và hoàn tiền</a>
+                    </div>
+
+                    <div class="grid">
+                        <a href="">
+                            <img src="./assets/img/bo_cong_thuong.png" alt="" class="f__congthuong-img">
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/bct_hanggia.png" alt="" class="f__congthuong-img">
+                        </a>
+                    </div>
+
+                    <div class="grid f-info">
+                        <p>Địa chỉ: Tầng 7-8-9, XXX Plaza, Số xx Đường XX, Phường YY, Quận ZZ, Thành phố TT. Tổng đài hỗ trợ: 19001234 - Email: cskh@hotro.piusu.vn</p>
+                        <p>Chịu trách nhiệm quản lí nội dung: Nguyễn Hoàng Huệ - Điện thoại liên hệ: 0123456789</p>
+                        <p>Mã số doanh nghiệp: 0120140321 do Sở Kế hoạch & Đầu tư TP TT cấp lần đầu ngày 14/09/2020</p>
+                        <p>© 2020 - Bản quyền thuộc về Công ty TNHH hhh</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Modal layout -->
+        <!-- <div class="modal">
+            <div class="modal__overlay"></div>
+
+            <div class="modal__body"> -->
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng kí</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+    
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input"placeholder="Email của bạn">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input"placeholder="Mật khẩu">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input"placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <div class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Piu-Su Shop về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn btn-nomal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- Login form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng kí</span>
+                        </div>
+    
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input"placeholder="Email của bạn">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input"placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn btn-nomal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập bằng Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập bằng Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </body>
+</html>
